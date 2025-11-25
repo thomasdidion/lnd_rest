@@ -182,6 +182,7 @@ pub struct SendPaymentSyncRequest {
     pub outgoing_chan_id: Option<String>,
     pub last_hop_pubkey: Option<Base64String>,
     pub cltv_limit: Option<i64>,
+    pub dest_custom_records: Option<HashMap<u64, Base64String>>,
     pub allow_self_payment: Option<bool>,
     pub dest_features: Option<Vec<u8>>,
     pub payment_addr: Option<Base64String>,
